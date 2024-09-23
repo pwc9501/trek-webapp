@@ -49,12 +49,15 @@ router.get('/isAllocator', async (req, res, next) => {
  */
 router.post('/', async (req, res, next) => {
     try {
+        // res.status(500).json({ test: req.body });
         const createParams = ['username', 'password', 'first_name', 'last_name', 'phone'];
         const signInParams = ['username', 'password'];
 
-        const missingCreateParams = createParams.filter(param => !(param in req.body));
-        const missingSignInParams = signInParams.filter(param => !(param in req.body));
+        // const missingCreateParams = createParams.filter(param => !(param in req.body));
+        // const missingSignInParams = signInParams.filter(param => !(param in req.body));
 
+        const missingCreateParams = [];
+        const missingSignInParams = [];
         if (missingCreateParams.length === 0) {
             const user = await userModel.createUser(req.body);
             res.status(200).json({ user_id: user.id, message: `User created successfully with id ${user.id}.` });

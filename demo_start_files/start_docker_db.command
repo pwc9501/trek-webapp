@@ -10,10 +10,10 @@ cd "$parent_path"
 cd ..
 
 # Tear Down Old Docker Container & cached data (if applicable)
-docker-compose down -v
+docker compose down -v
 
 # Rebuild docker container with no cache
-docker-compose build --no-cache
+docker compose build --no-cache
 
 # Start docker-compose
-docker-compose up
+docker compose up

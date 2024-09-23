@@ -185,7 +185,8 @@ const Login = () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(createData)
                 };
-                const cResponse = await fetch(config.apiURL + `/user/`, cOptions);
+                console.log(cOptions.body)
+                const cResponse = await fetch(`http://localhost:5000/user/`, cOptions);
                 if ( !cResponse.ok ) {
                     throw new Error(`HTTP error (1)! Status: ${cResponse.status}`);
                 }

@@ -17,7 +17,6 @@
  app.use(morgan('dev')); // Logging HTTP requests in the console with 'dev' format
  app.use(bodyParser.json()); // Parsing JSON request bodies
  app.use(bodyParser.urlencoded({extended: false})); // Parsing URL-encoded request bodies
- 
  // Middleware for handling user-related routes
  app.use('/user', userRoutes);
  // Middleware for handling trail-related routes
