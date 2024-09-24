@@ -3,6 +3,8 @@
 # Change directory to demo_start_files
 cd demo_start_files/
 
+# Terminal emulator may need to be changed based on distro or desktop environment
+
 # Start Docker DB
 echo "Starting Docker DB"
 chmod +x ./start_docker_db.command
