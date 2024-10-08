@@ -9,5 +9,8 @@ cd "$parent_path"
 # Change directory to the 'api' directory
 cd ../api
 
+# Update packages
+npm install
+
 # Start npm
 npm start
