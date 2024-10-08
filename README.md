@@ -106,7 +106,7 @@ Once cloned, navigate into the `trek-webapp` directory, and complete the followi
 In the root of the project, create an `.env` file in the root directory of your repository and add the following lines to it:
 
 ```text
-API_URL=http://localhost/5000
+API_URL=http://localhost:5000
 DB_USERNAME=adirontech
 DB_PASSWORD=password
 DB_PORT=5432
